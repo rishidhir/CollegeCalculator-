@@ -1,22 +1,32 @@
-# Compiled class file
-*.class
+import java.util.*;
+public class Exercise3 {
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+	
+	public static void main(String[] args) {
+		
+    Scanner keyboard = new Scanner (System.in);
+		System.out.println("Enter the number of years in school:");
+		String number1 = keyboard.nextLine();
+		double singleanswer = Double.parseDouble(number1);
+		System.out.println("Enter the cost of your tuition per year: ");
+		String number = keyboard.nextLine();
+		double doubleanswer = Double.parseDouble(number);
+		System.out.println("Enter the cost of your rent per year:");
+		String number5 = keyboard.nextLine();
+		double tripleanswer = Double.parseDouble(number5);
+		System.out.println("Enter the number of books per year");
+		String number2 = keyboard.nextLine();
+		double quadanswer = Double.parseDouble(number2);
+		System.out.println("Enter the average cost of each book: ");
+		String number3 = keyboard.nextLine();
+		double diffanswer = Double.parseDouble(number3);
+		System.out.println("Enter your offset cost for one year: ");
+		String number4 = keyboard.nextLine();
+		double superanswer = Double.parseDouble(number4);
+		System.out.println();
+		System.out.println("Your total cost for college is:\n");
+		System.out.println((singleanswer*doubleanswer) + (singleanswer*tripleanswer) + (singleanswer*quadanswer*diffanswer) - (singleanswer*superanswer));
+		}
+	
+}
+	
